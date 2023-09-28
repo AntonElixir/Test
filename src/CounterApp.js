@@ -20,10 +20,9 @@ const CounterApp = ({ value = 10 }) => {
     <>
       <h1>CounterApp</h1>
       <h2 data-testid={COUNTER_APP_TEST_IDS.title}> {counter} </h2>
-
-      <button onClick={handleAdd}>+1</button>
-      <button onClick={handleReset}>Reset</button>
-      <button onClick={handleSubtract}>-1</button>
+      <button data-testid={COUNTER_APP_TEST_IDS.buttonPlus} onClick={handleAdd}>+1</button>
+      <button data-testid={COUNTER_APP_TEST_IDS.buttonReset} onClick={handleReset}>Reset</button>
+      <button data-testid={COUNTER_APP_TEST_IDS.buttonMinus} onClick={handleSubtract}>-1</button>
     </>
   );
 };
